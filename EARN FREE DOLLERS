@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Income Opportunities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #4361ee;
+            --secondary: #3a0ca3;
+            --accent: #f72585;
+            --success: #4cc9f0;
+            --warning: #f9c74f;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: var(--gray);
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            padding: 25px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+        }
+        
+        .card-header i {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .card-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .card-body {
+            padding: 25px;
+        }
+        
+        .card-body p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        .card-body ul {
+            list-style-type: none;
+            margin-bottom: 25px;
+        }
+        
+        .card-body li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-body li i {
+            color: var(--success);
+            margin-right: 10px;
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .income-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--warning);
+            color: var(--dark);
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+        
+        .disclaimer {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            border-left: 5px solid var(--warning);
+        }
+        
+        .disclaimer h3 {
+            color: var(--warning);
+            margin-bottom: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            color: var(--gray);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>5 Ways to Earn Money Daily Online</h1>
+            <p>Legitimate opportunities to generate income from home. Click on any option below to get started.</p>
+        </header>
+        
+        <div class="cards-container">
+            <!-- Option 1 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h2>Freelance Writing</h2>
+                    <div class="income-badge">Earn up to $50 daily</div>
+                </div>
+                <div class="card-body">
+                    <p>Get paid to write articles, blog posts, and content for websites. No experience required to start.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Flexible working hours</li>
+                        <li><i class="fas fa-check-circle"></i> Work from anywhere</li>
+                        <li><i class="fas fa-check-circle"></i> Build your portfolio</li>
+                    </ul>
+                    <a href="#" class="btn">Get Started Now</a>
+                </div>
+            </div>
+            
+            <!-- Option 2 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-tasks"></i>
+                    <h2>Online Surveys</h2>
+                    <div class="income-badge">Earn up to $25 daily</div>
+                </div>
+                <div class="card-body">
+                    <p>Share your opinions and get paid for completing surveys during your free time.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> No special skills needed</li>
+                        <li><i class="fas fa-check-circle"></i> Complete anytime</li>
+                        <li><i class="fas fa-check-circle"></i> Instant payout options</li>
+                    </ul>
+                    <a href="#" class="btn">Start Taking Surveys</a>
+                </div>
+            </div>
+            
+            <!-- Option 3 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Affiliate Marketing</h2>
+                    <div class="income-badge">Earn up to $100+ daily</div>
+                </div>
+                <div class="card-body">
+                    <p>Promote products and services online and earn commissions for every sale you generate.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Passive income potential</li>
+                        <li><i class="fas fa-check-circle"></i> Unlimited earning potential</li>
+                        <li><i class="fas fa-check-circle"></i> Work from anywhere</li>
+                    </ul>
+                    <a href="#" class="btn">Learn Affiliate Marketing</a>
+                </div>
+            </div>
+            
+            <!-- Option 4 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h2>Online Tutoring</h2>
+                    <div class="income-badge">Earn up to $40 hourly</div>
+                </div>
+                <div class="card-body">
+                    <p>Teach what you know and help students learn while earning money on your own schedule.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Set your own rates</li>
+                        <li><i class="fas fa-check-circle"></i> Help others learn</li>
+                        <li><i class="fas fa-check-circle"></i> Build teaching experience</li>
+                    </ul>
+                    <a href="#" class="btn">Become a Tutor</a>
+                </div>
+            </div>
+            
+            <!-- Option 5 -->
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-microphone"></i>
+                    <h2>Voice Over Work</h2>
+                    <div class="income-badge">Earn up to $200 per project</div>
+                </div>
+                <div class="card-body">
+                    <p>Use your voice to create content for commercials, audiobooks, and animations.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Work from home studio</li>
+                        <li><i class="fas fa-check-circle"></i> Creative work</li>
+                        <li><i class="fas fa-check-circle"></i> Build a voice portfolio</li>
+                    </ul>
+                    <a href="#" class="btn">Find Voice Work</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="disclaimer">
+            <h3><i class="fas fa-exclamation-triangle"></i> Important Disclaimer</h3>
+            <p>Earnings are not guaranteed and depend on individual effort, time investment, and skills. These are legitimate opportunities but require work to generate income. Be cautious of any programs that promise unrealistic earnings or require large upfront payments.</p>
+        </div>
+        
+        <footer>
+            <p>© 2023 Daily Income Opportunities. All rights reserved.</p>
+            <p>Note: This is a demo page. Replace the links with your actual affiliate links or recommended programs.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add click tracking for the buttons
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const cardTitle = this.closest('.card').querySelector('h2').textContent;
+                alert(`You clicked on the ${cardTitle} opportunity. In a real application, this would redirect to the appropriate earning platform.`);
+            });
+        });
+    </script>
+</body>
+</html>
